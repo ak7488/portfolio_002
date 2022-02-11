@@ -1,0 +1,73 @@
+.hero {
+    background-image: url('/ASSETS/pexels-negative-space-160107_laptop.jpg');
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+}
+
+.welcome {
+    width: 100%;
+    min-height: 500px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.welcome_introduction {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    color: var(--permanent_white);
+    justify-content: center;
+}
+
+.welcome_me_img img {
+    width: 100%;
+    width: 250px;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+.welcome_introduction p {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    padding: 10px;
+    display: inline-block;
+    margin-top: 10px;
+    word-spacing: 2px;
+    line-height: 28px;
+}
+
+.welcome_introduction p > span {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.welcome_introduction_text {
+    max-width: 80%;
+    padding: 0 10px;
+}
+
+@media (min-width: 600px) {
+    .welcome_introduction {
+        flex-direction: row;
+    }
+
+    .welcome_introduction > div {
+        width: 50%;
+    }
+
+    .welcome_me_img {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
